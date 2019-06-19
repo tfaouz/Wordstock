@@ -1,0 +1,234 @@
+body
+{
+    /*sample/placeholder background - just laying something basic out*/
+    background: url('../assets/images1/bodyBackground.jpg');
+    font-family: 'Ultra', serif;
+}
+
+/*added page-container class to the primary/top-most container div of each html page*/
+.page-container 
+{
+    /* background-color: rgb(255,103,101); */
+    /* background-color: rgb(161,0,114); */
+    padding: 0;
+    background: url('../assets/images1/bodyBackground.jpg');
+    
+}
+
+/*main recurring page header - added class pageHeader*/
+.pageHeader
+{
+    background: url('../assets/images1/headerBackground.jpg');
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    
+}
+
+/*added h1 to translate and dictionary html, replaced h1 on index html - matched styling*/
+.title
+{
+    font-size: 90px;
+    font-family: 'Ultra', serif;
+    color: wheat;
+    text-shadow:
+        -6px -6px 0 #000,
+		6px -6px 0 #000,
+		-6px 6px 0 #000,
+		6px 6px 0 #000;
+}
+
+/*not sure what the -4 is after display, bootstrap? But this is the secondary h1 div on translate and dictionary*/
+.display-4
+{
+    font-size: 50px;
+    font-family: 'Ultra', serif;
+    color: wheat;
+    text-shadow:
+        -4px -4px 0 #000,
+		4px -4px 0 #000,
+		-4px 4px 0 #000,
+		4px 4px 0 #000;
+}
+
+/*the paragraph class in the header of the html*/
+/* I commented this out and added an h1 tag to make the header look a little cleaner. -madelyn.
+/* .lead
+{
+    font-family: 'Ultra', serif;
+    color: wheat;
+    text-shadow:
+        -4px -4px 0 #000,
+		4px -4px 0 #000,
+		-4px 4px 0 #000,
+		4px 4px 0 #000;
+} */
+.searchWord {
+    color: rgb(250,96,0);
+    font-family: 'Ultra', serif;
+    text-shadow:
+        -2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+        2px 2px 0 #000;
+        text-align: center;
+        margin: -25px 0px 40px 0px;
+        
+}
+/*added this container div to encapsulate the translate.html and dictionary.html main content under the header*/ 
+.content-container
+{
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+
+/*added this class to the Navbar - Searchbar/Form - Search Results to help separate them and allow for easier css customization*/
+.contentRow
+{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+/*<------------------------------------start of homebutton css management----------------------------------->*/
+/*grouped homepage buttons into a container for css management*/
+.button-container-home   
+{
+    margin-top: 30px;
+}
+
+/*left the button-section divs containing each separate button on the home page - wonky way to push them into rows and keep them centered*/
+.button-section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    height: 25px;
+
+}
+
+/* added class homeButton to the Translate and Dictionary buttons on the homepage*/
+.homebutton
+{
+    height: 55px;
+    margin-top: 5px;
+   color:rgb(251,204,3);
+   /* background-color:rgb(215,2,88); */
+   background-color:rgb(38, 193, 204);
+    font-family: 'Ultra', serif;
+    /* color: rgb(255, 136, 0); */
+    text-shadow:
+        -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+#translator-button {
+    background-color: rgb(38, 193, 204);
+    color: rgb(251,204,3);
+}
+/*<-----------------------------end of homebutton css management---------------------------------------->*/
+
+
+/*this is to extend the search results div to the bottom of the page*/
+.search-results
+{
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 40px;
+    padding: 30px;
+    min-height: 300px;
+}
+
+.sunshine {
+
+   background-color:  rgb(251,204,3);
+   border: 1px solid black;
+   color: black;
+   font-size: 20px;
+}
+.moon {
+    background-color:rgb(38, 193, 204);
+    border: 1px solid black;
+    color: black;
+    font-size:20px;
+}
+.bg-light {
+    padding: 0
+}
+.star {
+    background-color: rgb(243,2,81);
+    padding:20px 30px 20px 30px;
+}
+.paragraphs {
+    color:black;
+
+    text-align: center;
+    font-size: 25px;
+    font-family:  'Ultra', serif;
+    background: url('../assets/images1/bodyBackground.jpg');
+    /* border: 1px solid white; */
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke: white; */
+    /* text-shadow: 
+     1px  1px     #fff, 
+    -1px  1px     #fff, 
+     1px -1px     #fff, 
+    -1px -1px     #fff,
+     1px  1px 5px #555; */
+}
+.ourPage {
+    font-size: 20px;
+}
+.welcome {
+    font-size: 45px;
+    /* color: black; */
+    color:black;
+}
+#conversionGuideText {
+    color: white;
+}
+#convertTo, #convertFrom {
+    margin: 35px 0px 0px 10px;
+}
+#phrase2translate {
+    width:100%;
+}
+#phrase2translate {
+    margin: 30px 0px 0px 0px;
+}
+/* #convertTo {
+    margin: 0px 0px 0px 0px;
+} */
+#conversionGuideText {
+    margin: 30px 0px 0px 0px;
+    font-size: 25px;
+}
+#translateButton {
+    margin: 30px 0px 0px 0px;
+    width: 120px;
+}
+.pizza {
+    margin: -30px 0px 0px 0px;
+}
+.sushi {
+    background-color: rgb(161,0,114);
+}
+.tacos {
+    background-color: rgb(161,0,114);
+}
+
+#definitionCard-header
+{
+    font-size: 34px;
+}
+
+#resultsField
+{
+    font-size: 34px;
+}
